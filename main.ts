@@ -20,7 +20,8 @@ basic.forever(function () {
     )
     if (distance_to_sonar > 4) {
         strip.showColor(neopixel.colors(NeoPixelColors.Green))
-    } else if (false) {
+    } else if (distance_to_sonar <= 4) {
+        strip.showColor(neopixel.colors(NeoPixelColors.Blue))
         if (true) {
         	
         } else if (false) {
