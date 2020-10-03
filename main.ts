@@ -22,15 +22,14 @@ basic.forever(function () {
         strip.showColor(neopixel.colors(NeoPixelColors.Green))
     } else if (distance_to_sonar <= 4) {
         strip.showColor(neopixel.colors(NeoPixelColors.Blue))
-        if (true) {
-        	
-        } else if (false) {
-        	
-        } else {
-        	
+        if (distance_to_sonar == 3) {
+            strip.showColor(neopixel.colors(NeoPixelColors.Blue))
+        } else if (distance_to_sonar == 2) {
+            strip.showColor(neopixel.colors(NeoPixelColors.Blue))
         }
-    } else if (false) {
-    	
+    }
+    if (distance_to_sonar <= 1) {
+        strip.showColor(neopixel.colors(NeoPixelColors.Red))
     }
     strip.show()
     basic.showNumber(distance_to_sonar)
